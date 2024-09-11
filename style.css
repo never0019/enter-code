@@ -1,0 +1,195 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 页面主体设置 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1E73BE; /* 整个页面最底层背景为深蓝色 */
+    color: #333; /* 深色文本 */
+    height: 100vh; /* 确保页面占满整个视窗高度 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 容器 */
+.container {
+    max-width: 375px; /* 限制整个页面的宽度，保证卡片和图片宽度一致 */
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* 顶部导航栏 */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 替换顶部导航栏为提供的图片，设置宽度与卡片一致 */
+.banner {
+    width: 100%;
+    height: auto;
+    max-width: 375px; /* 确保与卡片宽度一致 */
+}
+
+/* 第一栏卡片 */
+.card {
+    background-color: #E5F2FB; /* 浅蓝色，与同济大学标志底色一致 */
+    border-radius: 10px; /* 减少倒角 */
+    padding: 16px;
+    text-align: center;
+    margin-top: 5px; /* 缩小与顶部的距离 */
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px; /* 调整下侧内边距，使内容更加紧凑 */
+}
+
+/* 第二个卡片的样式 */
+.reservation-card {
+    background-color: #1E73BE; /* 第二栏保持深蓝色 */
+    border-radius: 10px; /* 与第一栏倒角一致 */
+    text-align: center;
+    margin-top: 5px; /* 进一步缩小两栏之间的距离 */
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0; /* 移除所有内边距 */
+    display: flex; /* 让其内部内容完全占满 */
+    height: auto; /* 自动调整高度 */
+}
+
+/* 校区图片和Logo */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.jiading-logo {
+    width: 100px; /* 嘉定校区图片大小 */
+    height: auto;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: -10px;
+}
+
+/* 用户头像 */
+.profile img {
+    width: 160px; /* 放大头像 */
+    height: 160px;
+    margin-bottom: 15px;
+    object-fit: cover; /* 确保图片比例合适 */
+    border-radius: 0px; /* 取消倒圆角 */
+}
+
+/* 用户姓名 */
+.name {
+    font-size: 16px; /* 缩小彭晴的字体 */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* 实时更新时间，字体加粗 */
+.date-time {
+    font-size: 18px;
+    color: #3a3939;
+    font-weight: bold; /* 加粗 */
+    margin-bottom: 12px;
+}
+
+/* 二维码样式 */
+.qrcode img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 12px;
+}
+
+/* 状态信息 */
+.status {
+    color: #00FF00; /* 绿色字体，用于状态提示 */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* 预约信息排版 */
+.reservation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white; /* 添加白色边框 */
+    border-radius: 5px; /* 与第一栏倒角保持一致 */
+    width: 100%; /* 确保左右边框与上面卡片对齐 */
+    padding: 0; /* 减少内边距，确保内容占满 */
+    height: 100%; /* 占满整个卡片 */
+}
+
+/* 左侧预约时间部分的倒角 */
+.reservation-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E73BE; /* 深蓝色背景 */
+    color: white;
+    width: 50%; /* 左侧占50% */
+    padding: 5px; /* 确保内容占满 */
+    border-top-left-radius: 10px; /* 左侧倒角 */
+    border-bottom-left-radius: 10px; /* 左侧倒角 */
+}
+
+.time-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-label {
+    font-size: 16px;
+    color: #E5F2FB; /* 淡蓝色字体，匹配卡片颜色 */
+    margin-right: 5px; /* 预约时间与日期之间空一格 */
+}
+
+.time-date {
+    font-size: 16px;
+}
+
+.time-hour {
+    font-size: 16px; /* 调小，与预约时间字体大小一致 */
+    margin-top: 5px;
+}
+
+/* 右侧白色背景 */
+.reservation-gate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* 右侧背景为白色 */
+    width: 50%; /* 右侧占50% */
+    color: #000; /* 黑色字体 */
+    padding: 5px; /* 确保内容占满 */
+    text-align: center;
+}
+
+.gate-label {
+    font-size: 16px;
+    color: #666; /* 灰色字体 */
+    margin-bottom: 5px;
+}
+
+.gate-address {
+    font-size: 16px;
+    font-weight: bold; /* 黑体 */
+    color: #000;
+}
